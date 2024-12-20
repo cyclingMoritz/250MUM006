@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Project</title>
+    <title>University Project: Bicycle Traffic in Barcelona</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,42 +20,64 @@
         }
         main {
             padding: 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
         }
         section {
             margin-bottom: 40px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
         iframe {
             width: 100%;
             height: 500px;
-            border: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>University Project</h1>
-        <p>An analysis of the Obrim Carrers initiative in Barcelona</p>
+        <h1>University Project: Bicycle Traffic in Barcelona</h1>
+        <p>An in-depth analysis using data from 2017 to 2023</p>
     </header>
     <main>
         <section>
             <h2>Introduction</h2>
-            <p>This project explores the Obrim Carrers initiative, analyzing its impact on urban mobility and accessibility using interactive visualizations.</p>
+            <p>This project investigates the potential of permanent inductive loop bicycle counters by analyzing traffic data collected in Barcelona from 2017 to 2023. 
+            It explores seasonal patterns, daily trends, and anomalies while emphasizing data cleaning and imputation techniques to improve data reliability. </p>
         </section>
         <section>
-            <h2>Visualization 1: Traffic Analysis</h2>
+            <h2>Visualization 1: Long-Term Trends</h2>
+            <p>This visualization highlights the long-term traffic trends, including a sharp decline during the COVID-19 lockdown and subsequent recovery. 
+            The data reflects yearly and overall cycling activity changes over time.</p>
             <iframe src="html/traffic_analysis.html"></iframe>
         </section>
         <section>
-            <h2>Visualization 2: Accessibility Impact</h2>
+            <h2>Visualization 2: Weekly and Seasonal Patterns</h2>
+            <p>This plot showcases weekly and seasonal trends, identifying the days and times with the highest cycling activity. 
+            Peaks correspond to commuting hours, while seasonal data shows increased activity in warmer months.</p>
             <iframe src="html/accessibility_impact.html"></iframe>
         </section>
         <section>
-            <h2>Visualization 3: Environmental Effects</h2>
+            <h2>Visualization 3: Data Anomalies</h2>
+            <p>This visualization presents anomalies detected in the data, such as unusually high or low counts. 
+            It also demonstrates how data cleaning enhanced the accuracy of the analysis.</p>
             <iframe src="html/environmental_effects.html"></iframe>
         </section>
     </main>
+    <footer>
+        <p>Master of Science in Urban Mobility | Barcelona | 2024</p>
+    </footer>
 </body>
 </html>
