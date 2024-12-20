@@ -58,10 +58,14 @@
             It explores seasonal patterns, daily trends, and anomalies while emphasizing data cleaning and imputation techniques to improve data reliability. </p>
         </section>
         <section>
-            <h2>Visualization 1: Long-Term Trends</h2>
-            <p>This visualization highlights the long-term traffic trends, including a sharp decline during the COVID-19 lockdown and subsequent recovery. 
-            The data reflects yearly and overall cycling activity changes over time.</p>
-            <iframe src="html/hexbin_mapbox_animation.html"></iframe>
+            <h2>Visualization 1: Evolution of the number of counters</h2>
+            <p>The available data set is comprised of 54.037.979 15-minute observations collected using permanent counters in various locations in Barcelona between 2017 and 2024. 
+                The number of stations varies during the years and does not match on both datasets, as seen in in Figure 1. 
+                The counters are in both unidirectional and bidirectional bicycle lanes and treat each travel direction separately. 
+                Each observation contains the id of the counter, the date and time of the observation, the bicycle count, and the associated error. 
+                Each station contains the id, a string describing the counter, the type of vehicle that it counts, 
+                the number of lanes, the district and neighborhood number, the type of equipment and the coordinates. </p>
+            <iframe src="html/fig_counters_by_year"></iframe>
         </section>
         <section>
             <h2>Visualization 2: Error Analysis and Data Quality Assessment</h2>
@@ -74,9 +78,14 @@
             <iframe src="html/fig_error_counts_per_day.html"></iframe>
         </section>
         <section>
-            <h2>Visualization 3: Data Anomalies</h2>
+            <h2>Visualization 3: Estimated AADBT</h2>
             <p>This visualization presents anomalies detected in the data, such as unusually high or low counts. 
             It also demonstrates how data cleaning enhanced the accuracy of the analysis.</p>
+            <iframe src="html/fig_boxplot_aadbt.html"></iframe>
+        </section>
+        <section>
+            <h2>Visualization 4: Evolution AADBT</h2>
+            <p>Map of AADBT evolution by time shown using hexbins.</p>
             <iframe src="html/hexbin_mapbox_animation.html"></iframe>
         </section>
     </main>
