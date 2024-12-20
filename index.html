@@ -65,6 +65,9 @@
                 Each observation contains the id of the counter, the date and time of the observation, the bicycle count, and the associated error. 
                 Each station contains the id, a string describing the counter, the type of vehicle that it counts, 
                 the number of lanes, the district and neighborhood number, the type of equipment and the coordinates. </p>
+                <div class="button-container">
+                    <a href="pages/traffic_analysis.html" target="_blank">Open Plot</a>
+                </div>
             <iframe src="html/fig_counters_by_year"></iframe>
         </section>
         <section>
@@ -75,17 +78,26 @@
                 The "Valid" category accounts for most observations (89.9%) and is present on almost every day (99.9%). In contrast, "Unknown" errors are relatively rare, making up only 2.5% of the total,
                 and occur on fewer days (15.1%). The "Partial" category, though less frequent overall (1.4%), appears on most days (99.1%) but never exceeds 25.5% of the daily observations.
                 "Invalid" observations are more common than "Unknown" (6.1%) and occur on nearly as many days as "Valid," with a significant maximum daily ratio of 61.6%.</p>            
-            <iframe src="html/fig_error_counts_per_day.html"></iframe>
+                <div class="button-container">
+                    <a href="pages/weekly_seasonal_patterns.html" target="_blank">Open Plot</a>
+                </div>
+                <iframe src="html/fig_error_counts_per_day.html"></iframe>
         </section>
         <section>
             <h2>Visualization 3: Estimated AADBT</h2>
             <p>This visualization presents anomalies detected in the data, such as unusually high or low counts. 
             It also demonstrates how data cleaning enhanced the accuracy of the analysis.</p>
+            <div class="button-container">
+                <a href="pages/weekly_seasonal_patterns.html" target="_blank">Open Plot</a>
+            </div>
             <iframe src="html/fig_boxplot_aadbt.html"></iframe>
         </section>
         <section>
             <h2>Visualization 4: Evolution AADBT</h2>
             <p>Map of AADBT evolution by time shown using hexbins.</p>
+            <div class="button-container">
+                <a href="pages/data_anomalies.html" target="_blank">Open Plot</a>
+            </div>
             <iframe src="html/hexbin_mapbox_animation.html"></iframe>
         </section>
     </main>
