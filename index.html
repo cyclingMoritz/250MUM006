@@ -64,10 +64,14 @@
             <iframe src="html/hexbin_mapbox_animation.html"></iframe>
         </section>
         <section>
-            <h2>Visualization 2: Weekly and Seasonal Patterns</h2>
-            <p>This plot showcases weekly and seasonal trends, identifying the days and times with the highest cycling activity. 
-            Peaks correspond to commuting hours, while seasonal data shows increased activity in warmer months.</p>
-            <iframe src="html/hexbin_mapbox_animation.html"></iframe>
+            <h2>Visualization 2: Error Analysis and Data Quality Assessment</h2>
+            <p>In the Figure 2 we can observe the evolution in the number of observations as well as the presence of errors of varying seriousness. 
+                The number of observations increases overtime, with some notable drops that can last various days or may not recover at all.</p>
+            <p>Focusing on the categories of observations, we can see that most of the data falls under the "Valid" category, followed by "Invalid" and "Unknown" as shown in Table 1Table 2.
+                The "Valid" category accounts for most observations (89.9%) and is present on almost every day (99.9%). In contrast, "Unknown" errors are relatively rare, making up only 2.5% of the total,
+                and occur on fewer days (15.1%). The "Partial" category, though less frequent overall (1.4%), appears on most days (99.1%) but never exceeds 25.5% of the daily observations.
+                "Invalid" observations are more common than "Unknown" (6.1%) and occur on nearly as many days as "Valid," with a significant maximum daily ratio of 61.6%.</p>            
+            <iframe src="html/fig_error_counts_per_day.html"></iframe>
         </section>
         <section>
             <h2>Visualization 3: Data Anomalies</h2>
