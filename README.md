@@ -7,7 +7,7 @@ Welcome to the **Bicycle Traffic Evolution** project repository. This project ai
 - [Project Overview](#project-overview)
 - [Repository Structure](#repository-structure)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
+- [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -49,7 +49,7 @@ To get started with this project:
 
     Navigate to the notebooks/ directory to find Jupyter notebooks that analyze the bicycle traffic data.
 
-## Results of the project
+## Results
 * Viewing the final report done for the subject.
     * [Report](https://github.com/cyclingMoritz/250MUM006/blob/main/R23.%20BICYCLE%20TRAFFIC%20-%20Liebscht.pdf)
 * Viewing the interactive HTML figured:
