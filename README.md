@@ -49,9 +49,12 @@ To get started with this project:
 
     Navigate to the notebooks/ directory to find Jupyter notebooks that analyze the bicycle traffic data.
 
-## Usage
-* Viewing HTML Reports:
-    * Open index.html in your preferred web browser to view the project's main report or dashboard.
+## Results of the project
+* Viewing the final report done for the subject.
+    * [Report](https://github.com/cyclingMoritz/250MUM006/blob/main/R23.%20BICYCLE%20TRAFFIC%20-%20Liebscht.pdf)
+* Viewing the interactive HTML figured:
+    * [Interactive figures](https://cyclingmoritz.github.io/250MUM006/)
+* Viewing th
 
 ## Contributing
 We welcome contributions to enhance the project. To contribute:
