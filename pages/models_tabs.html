@@ -40,5 +40,29 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  const iframes = {
+    tab1: document.querySelector('#tab1 iframe'),
+    tab2: document.querySelector('#tab2 iframe'),
+    tab3: document.querySelector('#tab3 iframe'),
+    tab4: document.querySelector('#tab4 iframe')
+  };
+
+  document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(btn => {
+    btn.addEventListener('shown.bs.tab', function (event) {
+      const targetId = event.target.getAttribute('data-bs-target').substring(1);
+      const iframe = iframes[targetId];
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage('resize-map', '*');
+      }
+    });
+  });
+
+  // Optional: auto-fix the first map on load
+  window.addEventListener('load', () => {
+    iframes.tab1.contentWindow?.postMessage('resize-map', '*');
+  });
+</script>
+
 </body>
 </html>
