@@ -64,5 +64,24 @@
   });
 </script>
 
+<script>
+  document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(button => {
+    button.addEventListener('shown.bs.tab', function(event) {
+      const targetPaneId = event.target.getAttribute('data-bs-target');
+      const iframe = document.querySelector(`${targetPaneId} iframe`);
+      if (iframe) {
+        iframe.contentWindow.postMessage('resize-map', '*');
+      }
+    });
+  });
+  
+  // Optional: trigger resize on first visible tab
+  window.addEventListener('load', () => {
+    const activeIframe = document.querySelector('.tab-pane.active iframe');
+    if (activeIframe) {
+      activeIframe.contentWindow.postMessage('resize-map', '*');
+    }
+  });
+  </script>
 </body>
 </html>
